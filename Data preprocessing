@@ -1,0 +1,13 @@
+Import pandas as pd
+
+from sklearn.feature extraction. text Import Tfidt Vectorizer
+
+df = pd.DataFrame({"Lext": "TAKE news", "Real news", "Dreaking: Take event
+
+print("Before Preprocessing: \n", df.head())
+
+vectorizer Tfidfvectorizer (stop_words-'english')
+
+transformed_text vectorizer.fit_transform(df[Luxl'])
+
+print("After Preprocessing:\n", transformed_text.toarray())
